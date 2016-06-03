@@ -14,11 +14,11 @@
           <h3 class="panel-title">{{convertDate(w.dt) | date:'fullDate':'+0530'}}</h3>
         </div>
         <div class="panel-body">
-          Daytime-Temperature: {{convertTemp(w.temp.day)}}&#176;C
+          Daytime Temperature &mdash; {{convertTemp(w.temp.day)}}&#176;C
           <br>
-          Humidity: {{w.humidity}}
+          Humidity &mdash; {{w.humidity}} &#37;
           <br>
-          Description: {{w.weather[0].description}}
+          Description &mdash; {{w.weather[0].description}}
         </div>
       </div>
     </div>
