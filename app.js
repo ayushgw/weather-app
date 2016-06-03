@@ -49,10 +49,6 @@ weatherApp.controller('forecastController', ['$scope', '$routeParams', '$resourc
   $scope.weatherResult = $scope.weatherAPI.get({ q:$scope.city, cnt:$scope.days, appid:'c32698499c980065641adfae843a6d8d'});
   console.log($scope.weatherResult);
 
-  // $scope.convertTemp = function(degK){
-  //   return Math.round((1.8*(degK-273))+32);
-  // }
-
   $scope.convertTemp = function(degK){
    return Math.round(degK - 273.15);
  }
