@@ -1,0 +1,26 @@
+<p><a href="#/">Back to Search</a></p>
+<h2>{{city}} Weather Details</h2>
+<hr>
+
+<div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{convertDate(weatherResult.dt) | date:'fullDate':'+0530'}}</h3>
+        </div>
+        <div class="panel-body">
+          Daytime Temperature &mdash; {{convertTemp(weatherResult.main.temp)}}&#176;C
+          <hr>
+          Humidity &mdash; {{weatherResult.main.humidity}} &#37;
+          <hr>
+          Pressure &mdash; {{weatherResult.main.pressure}} Pa
+          <hr>
+          Wind &mdash; {{weatherResult.wind.speed}} Kmph
+          <hr>
+          Atmosphere &mdash; {{weatherResult.weather[0].description | capitalize}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
